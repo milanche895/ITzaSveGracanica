@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="calculator">
+        <div id = "display" class="calculator-screen">0</div>
+        <div id = "display-down" class="calculator-screen-down">0</div>
+        <div class="calculator-keys">
+            <button class="key" onclick="appendToDisplay(1)">1</button>
+            <button class="key" onclick="appendToDisplay(2)">2</button>
+            <button class="key" onclick="appendToDisplay(3)">3</button>
+            <button class="key operator" onclick="appendToDisplay('/')">÷</button>
+            <button class="key" onclick="appendToDisplay(4)">4</button>
+            <button class="key" onclick="appendToDisplay(5)">5</button>
+            <button class="key" onclick="appendToDisplay(6)">6</button>
+            <button class="key operator" onclick="appendToDisplay('*')">x</button>
+            <button class="key" onclick="appendToDisplay(7)">7</button>
+            <button class="key" onclick="appendToDisplay(8)">8</button>
+            <button class="key" onclick="appendToDisplay(9)">9</button>
+            <button class="key operator" onclick="appendToDisplay('+')">+</button>
+            <button class="key zero">0</button>
+            <button class="key">.</button>
+            <button class="key operator" onclick="appendToDisplay('-')">-</button>
+            <button class="key clear" onclick="clearDisplay()">C</button>
+            <button class="key equal" onclick="equalsNumber()">=</button>
+        </div>
+    </div>
+    <!--
+    <h1>To-Do List</h1>
+    <form id="add-task-form">
+      <input type="text" id="new-task" placeholder="Add a new task..." />
+      <button type="submit">Add</button>
+    </form>
+    <ul id="task-list"></ul>
+
+
+    <div class="card">
+        <h1 class="card-title">Card Title</h1>
+        <p class="card-description">This is a simple description for the card. It can be extended as needed.</p>
+    </div>
+    <div class="card">
+        <h1 class="card-title">Card Title</h1>
+        <p class="card-description">This is a simple description for the card. It can be extended as needed.</p>
+    </div>
+
+    <button id="openModal">Open Sidebar</button>
+
+    <div id="sidebar" class="sidebar">
+        <span class="close">&times;</span>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">ContactUs</a>
+    </div>
+
+    <!--
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Neki tekst</p>
+        </div>
+    </div>
+    
+    <div>
+        <h1 id = "vrednost">0</h1>
+    </div>
+    <div>
+        <button id="plus">+</button>
+        <button id="minus">-</button>
+        <button id="reset">Reset</button>
+    </div>
+    <div>
+        <h2>Login</h2>
+        <form name="myForms">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <input type="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+            <button type="button" onclick="validation()">Login</button>
+        </form>
+    </div>
+
+    <h1 id="naslov">Boje</h1>
+    <button type="button" class = "button1" onclick="klik('green')">Zelena</button>
+    <button type="button" class = "button2" onclick="klik('blue')">Plava</button>
+    <button type="button" class = "button3" onclick="klik('red')">Crvena</button>
+    <br>
+    <li class="fruit">Orange</li>
+    <li class="fruit">Orange</li>
+    <li class="fruit">Orange</li>
+
+    -->
+    <script src="app.js"></script>
+</body>
+
+</html>

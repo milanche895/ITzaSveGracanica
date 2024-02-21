@@ -1,0 +1,249 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+.calculator {
+  width: 240px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.calculator-screen {
+  width: 85%;
+  height: auto;
+  padding: 20px;
+  background-color: #eee;
+  text-align: right;
+  font-size: 32px;
+  border-bottom: 1px solid #ddd;
+}
+.calculator-screen-down {
+  width: 96%;
+  height: 15px;
+  padding: 5px;
+  background-color: #eee;
+  text-align: right;
+  font-size: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1px;
+}
+
+.key {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.key:active {
+  background-color: #ddd;
+}
+
+
+.key.key.operator:active {
+  background-color: #28bef0;
+}
+
+.key.operator {
+  background-color: aqua;
+}
+
+.key.equal {
+  grid-column: -2 / span 2;
+  background-color: #9fdd9f;
+}
+
+.key.equal:active {
+  background-color: #3fe183;
+}
+
+.key.clear {
+  grid-column: 1 / span 2;
+  background-color: #ff9f9f;
+}
+
+.key.clear:active {
+  background-color: #ed5858;
+}
+
+.key.zero {
+  grid-column: 1 / span 2;
+}
+
+
+/* Add more styling as needed */
+
+/*
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-title {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.card-description {
+  margin: 0;
+  color: #666;
+}
+
+
+-----------------------------
+.modal-content {
+  background-color: gray;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+}
+
+.close {
+  color: white;
+  float: right;
+  padding-right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover {
+  color: orange;
+  text-decoration: none;
+  cursor: pointer;
+}
+.sidebar {
+  display: none;
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+/*
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .login-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+
+  .login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  .login-form button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .login-form button:hover {
+    background-color: #45a049;
+  }
+
+/*h1{
+    text-align: center;
+}
+button {
+    align-items: center;
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #04AA6D;
+  }
+  
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+  }
+
+/*
